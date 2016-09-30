@@ -8,10 +8,12 @@ Download + pull + fork and *study*
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
+
 ## History
 09/29/2016: Created dynamic programming package, included making change problem.
 ## Credits
 Nicholai Mitchko
+
 ## License
 
 The MIT License (MIT)
