@@ -1,6 +1,6 @@
-package Questions.BasicStructures.Queues;
+package BasicStructures.Queues;
 
-import Questions.BasicStructures.Lists.Link;
+import BasicStructures.Lists.Link;
 
 /**
  * Created by nicholai on 9/30/16.

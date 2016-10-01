@@ -1,4 +1,4 @@
-package Questions.BasicStructures.Lists;
+package BasicStructures.Lists;
 
 /**
  * Created by nicholai on 9/30/16.
