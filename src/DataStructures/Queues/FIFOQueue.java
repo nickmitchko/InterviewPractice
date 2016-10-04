@@ -1,6 +1,6 @@
-package BasicStructures.Queues;
+package DataStructures.Queues;
 
-import BasicStructures.Lists.Link;
+import DataStructures.Lists.Link;
 
 /**
  * Created by nicholai on 9/30/16.

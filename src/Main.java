@@ -1,4 +1,4 @@
-import DynamicProgramming.MakingChange;
+import DynamicProgramming.RodCutting.MakingChange;
 
 public class Main {
     public static void main(String[] args) {

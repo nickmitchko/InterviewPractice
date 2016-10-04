@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package DynamicProgramming.RodCutting;
 
 /**
  * Created by nicholai on 9/29/16.

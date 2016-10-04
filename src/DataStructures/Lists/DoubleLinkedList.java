@@ -1,4 +1,4 @@
-package BasicStructures.Lists;
+package DataStructures.Lists;
 /**
  * Created by nicholai on 9/30/16.
  */
