@@ -10,6 +10,7 @@ Download + pull + fork and *study*
 5. Submit a pull request :D
 
 ## History
+* 10/06/2016: Started Sorting Algorithms
 * 10/04/2016: Added Full Directory Structure
 * 09/30/2016: Added Linked Lists, and LIFO/FIFO queues
 * 09/29/2016: Created dynamic programming package, included making change problem.

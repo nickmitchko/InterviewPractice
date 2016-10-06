@@ -1,5 +1,7 @@
 package Sorting;
 
+import java.util.ArrayList;
+
 /**
  * Created by nicholai on 10/4/16.
  * Worst case running time: θ(n^2)
@@ -10,8 +12,8 @@ package Sorting;
  */
 public class Quicksort<T> {
 
-    public T[] QuickSort(){
-        return new T[0];
+    public ArrayList<T> QuickSort(){
+        return new ArrayList<T>(0);
     }
 
 }
