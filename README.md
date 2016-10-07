@@ -16,7 +16,12 @@ Download + pull + fork and *study*
 * 09/30/2016: Added Linked Lists, and LIFO/FIFO queues
 * 09/29/2016: Created dynamic programming package, included making change problem.
 ## Credits
-Nicholai Mitchko
+
+Implementation: Nicholai G. Mitchko
+
+Concepts: Introduction to Algorithms 3rd Edition: Cormen, Leiserson, Rivest, Stein
+
+Note: All code included here is the creation of Nicholai G. Mitchko. No code is taken from the aforementioned publication (Algorithms 3rd ed.)
 
 ## License
 
