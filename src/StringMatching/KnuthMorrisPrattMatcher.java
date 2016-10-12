@@ -20,46 +20,36 @@ package StringMatching;
 public class KnuthMorrisPrattMatcher {
 
     public static int match(String text, String pattern) {
-        int   n  = text.length();
-        int   m  = pattern.length();
-        int[] pi = KnuthMorrisPrattMatcher.prefix(pattern);
-        int   q  = 0;
-        for(int i = 0; i < n; ++i){
-            while(q > 0 && pattern.charAt(q+1) != text.charAt(i)){
-                q = pi[q];
-            }
-            if(pattern.charAt(q+1) == text.charAt(i)){
-                ++q;
-            }
-            if(q==m){
-                return i-m;
-            }
+        int patternLength = pattern.length();
+        int textLength = text.length();
+        int i = 0;
+        int j = 0;
+        int[][] prefix = KnuthMorrisPrattMatcher.prefix(pattern);
+        for (; i < textLength && j < patternLength; i++) {
+            j = prefix[text.charAt(i)][j];
         }
-        return -1;
+        if (j == patternLength) return i - patternLength;
+        return textLength;
     }
 
-    // Prefix function O(m)
-    public static int[] prefix(String pattern) {
-        int   m  = pattern.length();
-        int[] pi = new int[m];
-        pi[0] = 0;
-        int k = 0;
-        for (int q = 1; q < m; ++q) {
-            while (k > 0 && pattern.charAt(k + 1) != pattern.charAt(q)) {
-                k = pi[k];
-            }
-            if (pattern.charAt(k + 1) == pattern.charAt(q)) {
-                ++k;
-            }
-            pi[q] = k;
+    public static int[][] prefix(String pattern) {
+        int radix = 256;
+        int m = pattern.length();
+        int[][] prefixFunction = new int[radix][m];
+        prefixFunction[pattern.charAt(0)][0] = 1;
+        for (int i = 0, j = 1; j < m; j++) {
+            for (int inner = 0; inner < radix; inner++)
+                prefixFunction[inner][j] = prefixFunction[inner][i];
+            prefixFunction[pattern.charAt(j)][j] = j+1;
+            i = prefixFunction[pattern.charAt(j)][i];
         }
-        return pi;
+        return prefixFunction;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         String pizza = "I want to order a pepperoni pizza.";
         String peppr = "pepperoni";
-        System.out.println("There was a match at offset "+  KnuthMorrisPrattMatcher.match(pizza, peppr));
-        KnuthMorrisPrattMatcher.match(pizza ,peppr);
+        System.out.println("There was a match at offset " + KnuthMorrisPrattMatcher.match(pizza, peppr));
+        KnuthMorrisPrattMatcher.match(pizza, peppr);
     }
 }

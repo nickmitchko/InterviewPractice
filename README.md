@@ -10,6 +10,8 @@ Download + pull + fork and *study*
 5. Submit a pull request :D
 
 ## History
+* 10/11/2016: Number Theory Started
+* 10/11/2016: String Matching algorithms
 * 10/11/2016: Added MoreSorting Algorithms, Elementary Sorting Algorithms
 * 10/06/2016: More Dynamic Programming, Sorting Algorithms Complete
 * 10/06/2016: Started Sorting Algorithms
